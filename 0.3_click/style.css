@@ -5,24 +5,35 @@ body {
     align-content: center;
     font-family: sans-serif;
     width: 100%;
+    background-color: black;
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 button {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    border: 1px solid black;
+    border: 5px solid grey;
     padding: 5%;
     transition: 0.2s;
     border-radius: 30px;
+    font-size: 1.2em;
 }
 
 button:hover {
     cursor: pointer;
     background-color: black;
     color: white;
+}
+
+.compteur1 {
+    font-size: 2em;
+}
+
+.compteur2 {
+    font-size: 3em;
 }
