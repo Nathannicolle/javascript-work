@@ -1,0 +1,11 @@
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid black;
+}
+
+#entrees_joueur_2 {
+  display: none;
+}
