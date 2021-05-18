@@ -9,55 +9,69 @@
     <h1>Bienvenue sur ce tutoriel <b>Node.JS</b> en <b>Node.JS</b></h1>
     <div class="container">
         <h2>0 - Prérequis</h2>
-        <p>Vous devez vous rendre sur <a href="https://nodejs.org/">nodejs.org</a> puis après avoir vérifier que les
+        <p>Vous devez vous rendre sur <a href="https://nodejs.org/" target="blank">nodejs.org</a> puis après avoir vérifier que les
         versions proposées correspondent bien à votre système d'exploitation choisissez-en une, pour ma part j'ai choisi 
         la version 14.17.0 LTS</p> 
         <h2>1 - Mise en place de la partie serveur http</h2>
         <p>Il faut maintenant sur votre hôte local sur votre serveur (type : xampp, wamp,...) créer dans un répertoire
         un fichier nommé par example test.js entrer ce code :
         </p>
-        <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520http%2520%253D%2520require%28%2522http%2522%29%253B%250Aconst%2520host%2520%253D%2520%2522localhost%2522%253B%250Aconst%2520port%2520%253D%25208000%253B%250Aconst%2520requestListener%2520%253D%2520function%2520%28req%252C%2520res%29%2520%257B%250A%2520%2520res.end%28%2522Mon%2520premier%2520serveur%2520%21%2522%29%253B%250A%257D%253B%250A%250Aconst%2520serveur%2520%253D%2520http.createServer%28requestListener%29%253B%250Aserveur.listen%28port%252C%2520host%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%28%2522Le%2520serveur%2520tourne%2522%29%253B%250A%257D%29%253B"
-  style="width: 609px; height: 391px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+            <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520http%2520%253D%2520require%28%2522http%2522%29%253B%250Aconst%2520host%2520%253D%2520%2522localhost%2522%253B%250Aconst%2520port%2520%253D%25208000%253B%250Aconst%2520requestListener%2520%253D%2520function%2520%28req%252C%2520res%29%2520%257B%250A%2520%2520res.end%28%2522Mon%2520premier%2520serveur%2520%21%2522%29%253B%250A%257D%253B%250A%250Aconst%2520serveur%2520%253D%2520http.createServer%28requestListener%29%253B%250Aserveur.listen%28port%252C%2520host%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%28%2522Le%2520serveur%2520tourne%2522%29%253B%250A%257D%29%253B"
+    style="width: 609px; height: 391px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
 
-<h2>Explications du code :</h2>
-<iframe
-src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520http%2520%253D%2520require%28%2522http%2522%29%253B"
-style="width: 424px; height: 205px; border:0; transform: scale(1); overflow:hidden; border-radius: 30px;"
-sandbox="allow-scripts allow-same-origin">
-</iframe>
+    <h2>Explications du code :</h2>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520http%2520%253D%2520require%28%2522http%2522%29%253B"
+    style="width: 424px; height: 205px; border:0; transform: scale(1); overflow:hidden; border-radius: 30px;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
 
-    <h3>Cette ligne sert à inclure le module http</h3>
+        <h3>Cette ligne sert à inclure le module http</h3>
 
-<iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=2&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520host%2520%253D%2520%2522localhost%2522%253B"
-  style="width: 390px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-<h3>Cette ligne sert à définir le type d'hôte sur lequel fonctionnera votre serveur Node.JS</h3>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=2&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520host%2520%253D%2520%2522localhost%2522%253B"
+    style="width: 390px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    <h3>Cette ligne sert à définir le type d'hôte sur lequel fonctionnera votre serveur Node.JS</h3>
 
-<iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=3&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520port%2520%253D%25208000%253B"
-  style="width: 331px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-<h3>Cette ligne sert à définir le numéro de port utilisé par le serveur HTTP node.JS, cela signifie que si vous souhaitez accéder à votre serveur il va falloir entrer le domaine_du_localhost:numero_de_port, par exemple : web1.local:8000 (ici le numéro de port est bien 8000)</h3>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=3&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520port%2520%253D%25208000%253B"
+    style="width: 331px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    <h3>Cette ligne sert à définir le numéro de port utilisé par le serveur HTTP node.JS, cela signifie que si vous souhaitez accéder à votre serveur il va falloir entrer le domaine_du_localhost:numero_de_port, par exemple : web1.local:8000 (ici le numéro de port est bien 8000)</h3>
 
-<iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=4&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520requestListener%2520%253D%2520function%2520%28req%252C%2520res%29%2520%257B%250A%2520%2520res.end%28%2522Mon%2520premier%2520serveur%2520%21%2522%29%253B%250A%257D%253B"
-  style="width: 559px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-<h3>Cette partie sert à afficher le message "Mon premier serveur !" lorsque l'on se connecte avec le domaine cité précdemment : web1.local:8000</h3>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=4&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520requestListener%2520%253D%2520function%2520%28req%252C%2520res%29%2520%257B%250A%2520%2520res.end%28%2522Mon%2520premier%2520serveur%2520%21%2522%29%253B%250A%257D%253B"
+    style="width: 559px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    <h3>Cette partie sert à afficher le message "Mon premier serveur !" lorsque l'on se connecte avec le domaine cité précdemment : web1.local:8000</h3>
 
-<iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=8&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520serveur%2520%253D%2520http.createServer%28requestListener%29%253B%250Aserveur.listen%28port%252C%2520host%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%28%2522Le%2520serveur%2520tourne%2522%29%253B%250A%257D%29%253B"
-  style="width: 609px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-<h3>Cette partie sert à afficher un message de confirmation dans la console lorsque l'on lance le serveur pour être sûr que le serveur est bien lancé</h3>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=8&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520serveur%2520%253D%2520http.createServer%28requestListener%29%253B%250Aserveur.listen%28port%252C%2520host%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%28%2522Le%2520serveur%2520tourne%2522%29%253B%250A%257D%29%253B"
+    style="width: 609px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    <h3>Cette partie sert à afficher un message de confirmation dans la console lorsque l'on lance le serveur pour être sûr que le serveur est bien lancé</h3>
+    <p>Pour accéder à ce que nous vennons de créer il faut dans un premier temps <a href="https://lecrabeinfo.net/ouvrir-linvite-de-commandes-sur-windows-10-8-et-7.html" class="info" title="voir comment faire cela" target="_blank">se rendre dans le répertoire de nos fichier dans l'invite de commande (cmd)</a>. Puis entrer node suivi du nom de votre fichier comme node test.js, ce qui devrait donner</p>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=application%2Fx-sh&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=C%253A%255Cxampp%255Chtdocs%255Cweb1%255Cjavascripts-work%255CnodeJS%253Enode%2520test.js%250ALe%2520serveur%2520tourne"
+    style="width: 660px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
+    
+    <h2>2 - Routage</h2>
+    <p>Maintenant pour pouvoir rediriger automatiquement l'utilisateur en fonction de l'url qu'il a entré, nous allons nous baser sur express.js qui est un framework lui-même basé sur Node.JS. Pour l'installer dans l'invite de commande dans le repertoire de nos fichiers il faut faire :</p>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=0px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=8&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=npm%2520install%2520express%2520--save"
+    style="width: 398px; height: 225px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+    </iframe>
 </div>
 </body>
 </html>
